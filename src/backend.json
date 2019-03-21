@@ -1,0 +1,49 @@
+{
+  "reservedDates": [
+    {
+      "id": 1,
+      "checkIn": 1576537200000,
+      "checkOut": 1576882800000,
+      "guests": 2,
+      "user": "test@email.pl"
+    },
+    {
+      "id": 2,
+      "checkIn": 1576623600000,
+      "checkOut": 1576796400000,
+      "guests": 1,
+      "user": "test@email.pl"
+    },
+    {
+      "id": 3,
+      "checkIn": 1576882800000,
+      "checkOut": 1577055600000,
+      "guests": 3,
+      "user": "test@email.pl"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "test@email.pl",
+      "password": "pass",
+      "name": "\u0141ukasz",
+      "surname": "Tucholski",
+      "pesel": 90072700000,
+      "phone": "+48500500500",
+      "birth": 649036800000,
+      "street": "Jana Paw\u0142a II",
+      "building": 21,
+      "flat": 37,
+      "postalcode": "71-666",
+      "city": "Wroc\u0142aw",
+      "state": "dolno\u015bl\u0105skie",
+      "country": "Poland"
+    },
+    {
+      "id": 2,
+      "email": "test2@gmail.com",
+      "password": "pass2"
+    }
+  ]
+}

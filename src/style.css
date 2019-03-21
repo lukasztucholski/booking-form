@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif, Verdana, Geneva, Tahoma;
+  list-style-type: none;
+}
+body {
+  margin: 0 auto;
+  background: #433352 url('../img/mainbackground.jpg') no-repeat top center ;
+}
+
+.h3, .h2, .h1 {
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+.h3 {
+  font-size: 12px;
+}
+.h2 {
+  font-size: 15px;
+}
+.h1 {
+  font-size: 25px;
+}
+.input {
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  font-size: 11px;
+}
+.input + label {
+  color: #FFF;
+  font-size: 11px;
+}
+.btn {
+  margin: 0 auto;
+  padding: 2px 10px;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 10px;
+  font-weight: bold;
+  background: rgba(192, 161, 114, 0.863);
+  box-shadow: 0px 0px 1px 0 #453823;
+  color: #453823;
+}
+.btn:hover {
+  color: white;
+  background: none;
+  box-shadow: 0 0 3px 0 #BAA378;
+}
+.num-input {
+  width: 60px;
+}
+
+.user-space {
+  margin: 0 auto;
+  width: 500px;
+}
+.sign-in__form {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3px 0;
+  height: 20px;
+}
+/* .sign-in__input {
+  height: 100%;
+} */
+.sign-in__btn {
+  border: none;
+  height: 100%;
+  margin: 0;
+  padding: 2px 10px;
+}
+.sign-in__btn:hover {
+  box-shadow: 0 0 1px 0 #382E1C;
+}
+.sign-up-question {
+  font-size: 9px;
+  text-align: center;
+}
+.sign-up-question span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.sign-up-question span:hover {
+  color: darkred;
+}
+
+.user-panel {
+  margin: 0 auto;
+}
+.user-panel__menu {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+}
+.user-panel__menu li {
+  cursor: pointer;
+  font-size: 12px;
+}
+.user-panel__menu li:hover {
+  color: darkred;
+}
+
+.manage-account {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.user-panel__option {
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+}
+
+
+.edit-personal-data-link {
+  cursor: pointer;
+}
+.edit-personal-data-link:hover {
+  color: red;
+}
+.editing__form input {
+  margin: 3px;
+}
+.editing__form {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "personalTitleEditing personalTitleEditing personalTitleEditing personalTitleEditing"
+  "nameEditing nameEditing surnameEditing surnameEditing"
+  "peselEditing peselEditing phoneEditing phoneEditing"
+  "birthEditing birthEditing birthLabelEditing birtLabelEditing"
+  "adressTitleEditing adressTitleEditing adressTitleEditing adressTitleEditing"
+  "streetEditing streetEditing buildingEditing flatEditing"
+  "cityEditing cityEditing postalCodeEditing postalCodeEditing"
+  "stateEditing stateEditing countryEditing countryEditing"
+  "btnEditing btnEditing cancelEditing cancelEditing";
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: rgb(49, 49, 49);
+
+  position: absolute;
+
+}
+.editing__personal-title {
+  grid-area: personalTitleEditing;
+}
+.editing__name {
+  grid-area: nameEditing;
+}
+.editing__surname {
+  grid-area: surnameEditing;
+}
+.editing__pesel {
+  grid-area: peselEditing;
+}
+.editing__phone {
+  grid-area: phoneEditing;
+}
+.editing__birth {
+  grid-area: birthEditing;
+}
+.editing__birth + label {
+  grid-area: birthLabelEditing;
+  align-self: center;
+}
+.editing__adress-title {
+  grid-area: adressTitleEditing;
+}
+.editing__street {
+  grid-area: streetEditing;
+}
+.editing__building-div {
+  grid-area: buildingEditing;
+}
+.editing__flat-div {
+  grid-area: flatEditing;
+}
+.editing__postalcode {
+  grid-area: postalCodeEditing;
+}
+.editing__city {
+  grid-area: cityEditing;
+}
+.editing__state {
+  grid-area: stateEditing;
+}
+.editing__country {
+  grid-area: countryEditing;
+}
+.editing__send-btn {
+  grid-area: btnEditing;
+  height: 100%;
+}
+.editing__cancel-btn {
+  grid-area: cancelEditing;
+  height: 100%;
+}
+
+
+
+
+.registration {
+  margin-top: 40px;
+}
+.registration label {
+  color: white;
+  font-size: 12px;
+}
+.registration input {
+  margin: 3px;
+}
+.sign-up__form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "mainTitleArea mainTitleArea"
+  "email password"
+  "show-opt-data show-opt-data"
+  "optional-div optional-div"
+  "rules rules"
+  "signUpBtn cancelBtn";
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.sign-up__optional-data {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "personalTitle personalTitle personalTitle personalTitle"
+  "name name surname surname"
+  "pesel pesel phone phone"
+  "birth birth birthLabel birtLabel"
+  "adressTitle adressTitle adressTitle adressTitle"
+  "street street building flat"
+  "city city postalCode postalCode"
+  "state state country country";
+  grid-area: optional-div;
+}
+.sign-up__title {
+  grid-area: mainTitleArea;
+}
+.sign-up__email {
+  grid-area: email;
+}
+.sign-up__password {
+  grid-area: password;
+}
+.sign-up__show-opt-data-div {
+  grid-area: show-opt-data;
+}
+.sign-up__personal-title {
+  grid-area: personalTitle;
+}
+.sign-up__name {
+  grid-area: name;
+}
+.sign-up__surname {
+  grid-area: surname;
+}
+.sign-up__pesel {
+  grid-area: pesel;
+}
+.sign-up__phone {
+  grid-area: phone;
+}
+.sign-up__birth {
+  grid-area: birth;
+}
+.sign-up__birth + label {
+  grid-area: birthLabel;
+  align-self: center;
+}
+.sign-up__adress-title {
+  grid-area: adressTitle;
+}
+.sign-up__street {
+  grid-area: street;
+}
+.sign-up__building-div {
+  grid-area: building;
+}
+.sign-up__flat-div {
+  grid-area: flat;
+}
+.sign-up__postalcode {
+  grid-area: postalCode;
+}
+.sign-up__city {
+  grid-area: city;
+}
+.sign-up__state {
+  grid-area: state;
+}
+.sign-up__country {
+  grid-area: country;
+}
+.sign-up__rules-div {
+  grid-area: rules;
+}
+.sign-up__send-btn {
+  grid-area: signUpBtn;
+  height: 100%;
+}
+.sign-up__cancel-btn {
+  grid-area: cancelBtn;
+  height: 100%;
+}
+.sign-up__show-opt-data-input {
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin: 0 0px 10px 0;
+  display: inline;
+}
+
+
+.booking {
+  padding: 20px;
+  margin: 80px auto 0 auto;
+}
+.booking-form {
+  width: 700px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.booking__data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 12px;
+}
+.booking__data label {
+  color: white;
+  font-size: 10px;
+}
+.booking__input {
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 237, 209, 0.400);
+  text-align: center;
+  color: #453823;
+}
+.booking__number-input {
+  width: 50px;
+}
+.booking__btn {
+  border: none;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 8px;
+  color: #453823;
+  background: rgba(192, 161, 114, 0.863);
+}
+.booking__btn:hover {
+  color: white;
+  background: none;
+  box-shadow: 0 0 3px 0 #BAA378;
+}
+
+footer {
+  font-size: 8px;
+  text-align: center;
+  color: rgb(247, 247, 247);
+}
+footer a {
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.hide {
+  display: none;
+}
+
+
+.error {
+  border: 2px solid darkred;
+  color: darkred;
+  font-weight: bold;
+}
+.error + label {
+  color: darkred;
+  font-weight: bold;
+}
+.error-tip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: auto;
+  max-width: 150px;
+  height: auto;
+  background: #e6d3b6;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0 rgb(0, 0, 0);
+  padding: 5px;
+}
+.error-tip__exclamation-mark {
+  font-size: 25px;
+}
+.error-tip__error-text {
+  font-size: 11px;
+  padding: 5px 5px 5px 0;
+  color: rgb(110, 24, 24);
+}
+
+
+.alert-section {
+  position: absolute;
+  left: 50%;
+  /* top: 10%; */
+  transform: translateX(-50%);
+}
+.alert {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #e6d3b6;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0 rgb(0, 0, 0);
+}
+.alert__close-icon {
+  width: 15px;
+  height: 15px;
+  /* background: rgb(197, 38, 38); */
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  cursor: pointer;
+}
+.alert__close-icon:hover * {
+  box-shadow: 0 0 3px 0 #000;
+}
+.alert__close-icon-bar1, .alert__close-icon-bar2 {
+  width: 100%;
+  height: 10%;
+  background: #000;
+}
+.alert__close-icon-bar1 {
+  transform: rotate(45deg) translateY(1px);
+}
+.alert__close-icon-bar2 {
+  transform: rotate(-45deg) translateY(-2px);
+}
+.alert__exclamation-mark {
+  font-size: 45px;
+}
+.alert__text {
+  color: rgb(110, 24, 24);
+  font-size: 15px;
+}
+.alert__accept-booking {
+  align-self: flex-end;
+}

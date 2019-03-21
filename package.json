@@ -1,0 +1,29 @@
+{
+  "name": "booking-form",
+  "version": "1.0.0",
+  "description": "simple booking form with user registration, panel, and manage account",
+  "main": "src/js/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasztucholski/booking-form.git"
+  },
+  "keywords": [
+    "booking",
+    "form",
+    "user",
+    "panel",
+    "registration",
+    "vanillajs",
+    "javascript"
+  ],
+  "author": "Łukasz Tucholski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukasztucholski/booking-form/issues"
+  },
+  "homepage": "https://github.com/lukasztucholski/booking-form#readme",
+  "devDependencies": {
+    "eslint": "^5.15.3"
+  }
+}

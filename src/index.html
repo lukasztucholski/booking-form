@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simple Booking Form</title>
+  <script src="./js/index.js" type="module"></script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <section class="user-space"></section>
+  <section class="booking">
+    <form action="booking-form.php" method="post" id="booking-form" class="booking-form" name="booking-form" novalidate>
+      <h1 class="h1">MAKE YOUR RESERVATION</h1>
+      <div class="booking__data">
+        <label for="checking">CHECK IN:</label><input type="date" id="checkin" class="booking__input input"
+          name="checkin" value="2018-12-11">
+        <label for="checkout">CHECK OUT:</label><input type="date" id="checkout" class="booking__input input"
+          name="checkout" value="2018-12-12">
+        <label for="guests">GUESTS:</label><input type="number" id="guests"
+          class="booking__input booking__number-input input num-input" name="guests" min="1" max="10" placeholder="0">
+      </div>
+      <button type="submit" id="booking-btn" class="booking__btn btn">Check Availability</button>
+    </form>
+  </section>
+  <footer>
+    <p>Photo in background by <a href="https://unsplash.com/photos/g5ZIXjzRGds">Markus Spiske</a> on <a
+        href="https://unsplash.com/">Unsplash</a></p>
+  </footer>
+</body>
+
+</html>
